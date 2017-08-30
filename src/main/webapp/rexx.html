@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Test Project</title>
+
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/Script.js"></script>
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+
+</head>
+<body ng-app="myModule">
+<br> <br> <br> <br>
+
+
+        <div class="container" ng-controller="myController">
+            <div >
+            <h2 class="h2">This is test Grails Project</h2>
+            <br><br>
+            <label class="label-primary" for="ti1">First Name</label>
+            <input type="text" class="input-group" id="ti1" value={{uinfo.fname}}>
+            <br>
+            <label for="ti2" class="label-primary">Last Name</label>
+            <input type="text" class="input-group" id="ti2" value={{uinfo.lname}}>
+            <br>
+            <input type="button" class="btn btn-primary" value="CLICK" ng-click="doonclick()">
+            </div>
+        </div>
+</body>
+</html>
